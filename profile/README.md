@@ -18,11 +18,11 @@ Answer engines like ChatGPT, Perplexity and Gemini are fast becoming the way peo
 
 **CiteMentor closes that gap.** It answers the three questions every brand is asking:
 
-| | |
-|:-:|:--|
-| **01** | How visible is my brand in AI answers? |
-| **02** | Why isn't our brand being cited, and what are the blockers? |
-| **03** | What exactly should we do next? |
+<table>
+<tr><td align="center"><b>01</b></td><td>How visible is my brand in AI answers?</td></tr>
+<tr><td align="center"><b>02</b></td><td>Why isn't our brand being cited, and what are the blockers?</td></tr>
+<tr><td align="center"><b>03</b></td><td>What exactly should we do next?</td></tr>
+</table>
 
 **Tracked across** ChatGPT · Perplexity · Gemini · Google AI Overviews · Claude · Grok
 
