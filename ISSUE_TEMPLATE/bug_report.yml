@@ -1,0 +1,99 @@
+name: Bug report
+description: Something in the product is wrong (broken flow, wrong number, misleading UI or copy)
+title: ""
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Title format:** `Area: what's wrong`, for example `Prompt Report: Grok card says "AI Mode is not enabled"`.
+        No angle brackets, no ticket codes in the title (put those in Source below).
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong
+      description: One to three sentences.
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      placeholder: https://citementor.ai/dashboard/brands/.../prompts/report?kwId=...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - AI Visibility / Prompts
+        - Brand Command / Action Plan
+        - Competitive Edge
+        - Build External Authority (Trust)
+        - Brand Readiness
+        - Fix Your Website
+        - Report
+        - Onboarding / Brand creation
+        - Settings / Integrations
+        - Billing / Subscription
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: "High = data wrong, flow broken or a user is blocked. Medium = confusing or partly wrong. Low = cosmetic."
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      placeholder: The card names the engine that is locked, e.g. "Grok is not enabled".
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+      placeholder: Every locked engine shows "AI Mode is not enabled".
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Numbered, starting from a page anyone can open. Include the brand and inputs you used.
+      placeholder: |
+        1. Open the Prompt Report for a brand without Grok on its plan
+        2. Scroll to AI engine responses
+        3. Look at the Grok card
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot or recording
+      description: Drag and drop into this box so it's attached to the issue. Drive links expire or need access.
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source (optional)
+      description: Tracker or QA sheet reference, e.g. POST-LAUNCH-222.
