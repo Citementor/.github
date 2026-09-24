@@ -1,0 +1,71 @@
+name: Feature / enhancement
+description: A new capability, or an improvement to something that works today
+title: ""
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Title format:** `Area: the capability`, for example `Prompts: capture ChatGPT answers from the consumer app`.
+        Describe the outcome and the why. If it's large, split it into phases that can each ship on their own.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What we want and the problem it solves.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Who is blocked or hurting today, and what changes for them once this ships.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - AI Visibility / Prompts
+        - Brand Command / Action Plan
+        - Competitive Edge
+        - Build External Authority (Trust)
+        - Brand Readiness
+        - Fix Your Website
+        - Report
+        - Onboarding / Brand creation
+        - Settings / Integrations
+        - Billing / Subscription
+        - Infrastructure / Crawler
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: The approach, plus alternatives considered and why this one.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Done when
+      description: Concrete, checkable conditions.
+      placeholder: |
+        - Every tracked prompt has a stored search query
+        - Editing a prompt regenerates its query on the next scan
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source (optional)
+      description: Tracker reference, e.g. POST-LAUNCH-222.
